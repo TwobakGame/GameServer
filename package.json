@@ -1,0 +1,18 @@
+{
+  "name": "gameserver",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "투박게임 클라이언트 간 게임정보 중계 서버",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.7.2"
+  }
+}
