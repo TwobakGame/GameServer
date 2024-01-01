@@ -19,11 +19,9 @@ wsServer.on('connection', (socket) => {
     socket.onAny((event) => {
         console.log(`이벤트 발생 : ${event}`);
     });
-
     socket.on("join", (room) => {
         socket.join(room);
         socket["roomcode"] = room;
-        console.log(room + "번에 들어옴.");
     });
     socket.on("offer", (offer) => {
         socket.to(socket.roomcode).emit("offer", offer);
